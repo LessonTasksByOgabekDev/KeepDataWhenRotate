@@ -10,36 +10,27 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/et_fullName"
+        android:id="@+id/et_count"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:hint="@string/full_name" 
+        android:hint="@string/count"
         android:layout_margin="20dp"
-        android:inputType="textPersonName"
         android:background="#F3F3F3"/>
 
-    <EditText
-        android:id="@+id/et_email"
+    <TextView
+        android:id="@+id/tv_count"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:hint="@string/email"
         android:layout_margin="20dp"
-        android:inputType="textEmailAddress"
-        android:background="#F3F3F3"/>
-    
-    <EditText
-        android:id="@+id/et_password"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:hint="@string/password"
-        android:inputType="textVisiblePassword"
-        android:layout_margin="20dp"
-        android:background="#F3F3F3"/>
-    
+        android:text="@string/_0"
+        android:textSize="35sp"
+        android:gravity="center"/>
+
     <Button
-        android:id="@+id/btn_signUp"
+        android:id="@+id/btn_count"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:text="@string/sign_up"/>
+        android:layout_margin="20dp"
+        android:text="@string/count"/>
 
 </LinearLayout>
