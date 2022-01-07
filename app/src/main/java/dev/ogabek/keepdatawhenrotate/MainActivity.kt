@@ -28,17 +28,13 @@ class MainActivity : AppCompatActivity() {
         et_password = findViewById(R.id.et_password)
     }
 
-    override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
-        super.onSaveInstanceState(outState, outPersistentState)
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
 
         outState.putString("fullName", et_fullName.text.toString())
         outState.putString("email", et_email.text.toString())
         outState.putString("password", et_password.text.toString())
 
-    }
-
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
     }
 
     private fun ifRotate(savedInstanceState: Bundle?) {
